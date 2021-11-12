@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - include: tasks/dotfiles.yml
+    - include: tasks/zsh-setup.yml
+    - include: tasks/node-setup.yml
+    - include: tasks/npm-packages.yml
