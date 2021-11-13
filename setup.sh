@@ -30,7 +30,7 @@ echo What name would you like to use for your git config?
 read NAME
 echo What email would you like to use for your git config?
 read EMAIL
-echo -e "[user]\n\tname = $NAME\n\temail = $EMAIL" > ~/.local.gitconfig
+echo -e "[user]\n\tname = $NAME\n\temail = $EMAIL" > ~/.gitconfig.local
 
 # Install .oh-my-zsh
 echo "\nTask 7: Verify Oh My ZSH exists or install Oh My ZSH...\n"
