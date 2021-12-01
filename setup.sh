@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -u
+set -e
 
 # Install Homebrew, if not already installed
 echo "\nTask 1: Installing Homebrew if it does not already exist...\n"
@@ -47,11 +47,11 @@ source ~/.zshrc
 
 # Install LTS node version
 echo "\nTask 8: Installing LTS version of node...\n"
-nvm install --lts && nvm use --lts
+fnm install --lts
 
 # Install node packages
 echo "\nTask 9: Installing packages with NPM...\n"
-npm i -g yarn eslint typescript-language-server typescript
+npm-installer
 
 # Install nvim and lua
 echo "\nTask 10: Installing nvim and lua...\n"
